@@ -1,0 +1,4 @@
+effect give @p levitation 1 50
+#effect give @p jump_boost 10 50
+#effect give @p slow_falling 10 1
+baisound tnt1 1200 1 test

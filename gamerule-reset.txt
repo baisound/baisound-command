@@ -1,0 +1,20 @@
+xp set @p 0 levels
+xp set @p 0 points
+xp add @p 20 points
+effect give @p saturation 999999 255 true
+#昼固定
+gamerule doDaylightCycle false
+#天気固定
+gamerule doWeatherCycle false
+#物落とさない
+gamerule keepInventory true
+#MOBによるブロック破壊可能
+gamerule mobGriefing true
+#MOBわかない
+gamerule doMobSpawning false
+#コマンドのフィードバック受けない
+gamerule sendCommandFeedback false
+#コマンドブロック96000個置ける
+gamerule commandModificationBlockLimit 960000
+#落下ダメ無効
+gamerule fallDamage false

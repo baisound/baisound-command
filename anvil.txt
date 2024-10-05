@@ -1,0 +1,17 @@
+execute as @p at @p run summon falling_block ~ ~10 ~ {BlockState:{Name:"minecraft:anvil"},Time:1,Invulnerable:1b,DropItem:0b,Age:1200}
+execute as @p at @p run summon falling_block ~1 ~10 ~ {BlockState:{Name:"minecraft:anvil"},Time:1,Invulnerable:1b,DropItem:0b,Age:1200}
+execute as @p at @p run summon falling_block ~-1 ~10 ~ {BlockState:{Name:"minecraft:anvil"},Time:1,Invulnerable:1b,DropItem:0b,Age:1200}
+execute as @p at @p run summon falling_block ~2 ~10 ~ {BlockState:{Name:"minecraft:anvil"},Time:1,Invulnerable:1b,DropItem:0b,Age:1200}
+execute as @p at @p run summon falling_block ~-2 ~10 ~ {BlockState:{Name:"minecraft:anvil"},Time:1,Invulnerable:1b,DropItem:0b,Age:1200}
+execute as @p at @p run summon falling_block ~ ~10 ~1 {BlockState:{Name:"minecraft:anvil"},Time:1,Invulnerable:1b,DropItem:0b,Age:1200}
+execute as @p at @p run summon falling_block ~ ~10 ~-1 {BlockState:{Name:"minecraft:anvil"},Time:1,Invulnerable:1b,DropItem:0b,Age:1200}
+execute as @p at @p run summon falling_block ~ ~10 ~2 {BlockState:{Name:"minecraft:anvil"},Time:1,Invulnerable:1b,DropItem:0b,Age:1200}
+execute as @p at @p run summon falling_block ~ ~10 ~-2 {BlockState:{Name:"minecraft:anvil"},Time:1,Invulnerable:1b,DropItem:0b,Age:1200}
+execute as @p at @p run summon falling_block ~1 ~10 ~1 {BlockState:{Name:"minecraft:anvil"},Time:1,Invulnerable:1b,DropItem:0b,Age:1200}
+execute as @p at @p run summon falling_block ~-1 ~10 ~-1 {BlockState:{Name:"minecraft:anvil"},Time:1,Invulnerable:1b,DropItem:0b,Age:1200}
+execute as @p at @p run summon falling_block ~1 ~10 ~-1 {BlockState:{Name:"minecraft:anvil"},Time:1,Invulnerable:1b,DropItem:0b,Age:1200}
+execute as @p at @p run summon falling_block ~-1 ~10 ~1 {BlockState:{Name:"minecraft:anvil"},Time:1,Invulnerable:1b,DropItem:0b,Age:1200}
+execute as @p at @p run summon falling_block ~2 ~10 ~2 {BlockState:{Name:"minecraft:anvil"},Time:1,Invulnerable:1b,DropItem:0b,Age:1200}
+execute as @p at @p run summon falling_block ~-2 ~10 ~-2 {BlockState:{Name:"minecraft:anvil"},Time:1,Invulnerable:1b,DropItem:0b,Age:1200}
+execute as @p at @p run summon falling_block ~2 ~10 ~-2 {BlockState:{Name:"minecraft:anvil"},Time:1,Invulnerable:1b,DropItem:0b,Age:1200}
+execute as @p at @p run summon falling_block ~-2 ~10 ~2 {BlockState:{Name:"minecraft:anvil"},Time:1,Invulnerable:1b,DropItem:0b,Age:1200}

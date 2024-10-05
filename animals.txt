@@ -1,0 +1,9 @@
+#cat
+execute as @p at @p run summon minecraft:cat ^ ^10 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:cat,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+#cow
+execute as @p at @p run summon minecraft:cow ^ ^10 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:cow,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+#pig
+execute as @p at @p run summon minecraft:pig ^ ^10 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:pig,sort=nearest,limit=1] minecraft:slow_falling 3 1 true

@@ -1,0 +1,3 @@
+execute if weather clear run title @a actionbar {"text":"天気: 晴れ", "color":"yellow"}
+execute if weather rain run title @a actionbar {"text":"天気: 雨", "color":"blue"}
+execute if weather thunder run title @a actionbar {"text":"天気: 雷雨", "color":"dark_gray"}
