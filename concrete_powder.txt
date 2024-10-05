@@ -1,0 +1,2 @@
+execute at @p run fill 18 63 0 4 63 13 minecraft:blue_concrete_powder
+execute at @p run fill 18 63 0 4 63 13 minecraft:yellow_concrete_powder

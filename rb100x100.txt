@@ -1,0 +1,1 @@
+execute at @p run fill 18 -63 0 4 63 13 minecraft:air replace

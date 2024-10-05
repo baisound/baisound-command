@@ -1,0 +1,6 @@
+kill @e[type=!player,type=!item]
+
+
+#@e: 全てのエンティティを対象にします。
+#type=!player: プレイヤーを除外します。
+#type=!item: アイテムも除外します。
