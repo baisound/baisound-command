@@ -1,1 +1,2 @@
 weather thunder 600s
+#time set night

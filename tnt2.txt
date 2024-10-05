@@ -1,9 +1,12 @@
-tp @a -263 124 379
+tp @a 11 -26 7
 execute as @p at @p run summon tnt ~ ~5 ~ {Fuse:80} 
-execute as @p at @p run summon tnt ~ ~25 ~ {Fuse:80} 
-execute as @p at @p run summon tnt ~ ~35 ~ {Fuse:80} 
-execute as @p at @p run summon tnt ~ ~45 ~ {Fuse:80} 
-execute as @p at @p run summon tnt ~ ~55 ~ {Fuse:80} 
+execute as @p at @p run summon tnt ~5 ~25 ~ {Fuse:80} 
+execute as @p at @p run summon tnt ~ ~35 ~5 {Fuse:80} 
+execute as @p at @p run summon tnt ~8 ~45 ~ {Fuse:80} 
+execute as @p at @p run summon tnt ~ ~55 ~8 {Fuse:80} 
+execute as @p at @p run summon tnt ~10 ~65 ~8 {Fuse:80} 
+execute as @p at @p run summon tnt ~12 ~75 ~8 {Fuse:80} 
+execute as @p at @p run summon tnt ~12 ~85 ~8 {Fuse:80} 
 
 #1. execute as @p at @p run summon minecraft:zombie ^ ^10 ^-2 {NoAI:0b,NoGravity:0b,CustomName:"\"弱ったバイさん\""}
 #このコマンドは、現在のプレイヤーの位置を基準にして、ゾンビをプレイヤーの少し後ろかつ上空から召喚するために使用されます。
