@@ -1,0 +1,11 @@
+# 1. 村人を召喚（AIと重力あり、名前表示）
+#execute as @p at @p run summon minecraft:villager ^ ^ ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+#execute as @p at @p run summon minecraft:villager ^ ^ ^-2 {CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+
+execute as @p at @p run summon minecraft:pig ^ ^ ^-2 {CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+
+# 2. 近くの村人に緩やかな落下効果を付与（例として）
+#effect give @e[type=minecraft:villager,sort=nearest,limit=1] #minecraft:slow_falling 3 1 true
+
+# 3. 村人をMOBから守るために耐性効果を付与（この後雷でウィッチに変わる）
+#effect give @e[type=villager] minecraft:resistance 99999 255 true

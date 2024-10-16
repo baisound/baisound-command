@@ -1,7 +1,7 @@
-execute as @p at @p run summon minecraft:zombie ^ ^10 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+execute as @p at @p run summon minecraft:zombie ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
 effect give @e[type=minecraft:zombie,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
 
-execute as @p at @p run summon minecraft:skeleton ^ ^10 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+execute as @p at @p run summon minecraft:skeleton ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
 effect give @e[type=minecraft:skeleton,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
 
 #1. execute as @p at @p run summon minecraft:zombie ^ ^10 ^-2 {NoAI:0b,NoGravity:0b,CustomName:"\"弱ったバイさん\""}

@@ -1,5 +1,5 @@
-execute as @p at @p run summon minecraft:bee ^ ^10 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
-effect give @e[type=minecraft:bee,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+execute as @p at @p run summon minecraft:bee ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:bee,sort=nearest,limit=30] minecraft:slow_falling 3 1 true
 
 #1. execute as @p at @p run summon minecraft:zombie ^ ^10 ^-2 {NoAI:0b,NoGravity:0b,CustomName:"\"弱ったバイさん\""}
 #このコマンドは、現在のプレイヤーの位置を基準にして、ゾンビをプレイヤーの少し後ろかつ上空から召喚するために使用されます。

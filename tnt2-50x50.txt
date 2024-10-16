@@ -1,12 +1,12 @@
 tp @a 2 -14 1
 execute as @p at @p run summon tnt ~ ~5 ~ {Fuse:80} 
-execute as @p at @p run summon tnt ~5 ~25 ~ {Fuse:80} 
-execute as @p at @p run summon tnt ~ ~35 ~5 {Fuse:80} 
-execute as @p at @p run summon tnt ~8 ~45 ~ {Fuse:80} 
-execute as @p at @p run summon tnt ~ ~55 ~8 {Fuse:80} 
-execute as @p at @p run summon tnt ~10 ~65 ~8 {Fuse:80} 
-execute as @p at @p run summon tnt ~11 ~75 ~8 {Fuse:80} 
-execute as @p at @p run summon tnt ~11 ~85 ~8 {Fuse:80} 
+execute as @p at @p run summon tnt ~1 ~25 ~ {Fuse:80} 
+execute as @p at @p run summon tnt ~ ~35 ~1 {Fuse:80} 
+execute as @p at @p run summon tnt ~2 ~45 ~ {Fuse:80} 
+execute as @p at @p run summon tnt ~ ~55 ~3 {Fuse:80} 
+execute as @p at @p run summon tnt ~3 ~65 ~3 {Fuse:80} 
+execute as @p at @p run summon tnt ~1 ~75 ~3 {Fuse:80} 
+execute as @p at @p run summon tnt ~3 ~85 ~2 {Fuse:80} 
 
 
 #1. execute as @p at @p run summon minecraft:zombie ^ ^10 ^-2 {NoAI:0b,NoGravity:0b,CustomName:"\"弱ったバイさん\""}

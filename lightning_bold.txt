@@ -1,1 +1,37 @@
 execute at @p[distance=1..] run execute at @e[type=!minecraft:player,limit=30] run summon minecraft:lightning_bolt ~ ~ ~
+
+# 3. 変わったウィッチがプレイヤーを攻撃するのを許可するために、効果を消す（Weaknessを削除）
+#effect clear @e[type=witch]
+
+## 6. ウィッチのAIを有効にし、攻撃できるように確実にする
+#data merge entity @e[type=witch] {NoAI:0b}
+
+# 5. ウィッチにしてから、ウィッチのAIを有効にしてプレイヤーに攻撃させる
+#data merge entity @e[type=minecraft:witch,limit=1,sort=nearest] {NoAI:0b}
+
+# 1. スコアボードの作成
+scoreboard objectives add piglinDamage minecraft.custom:minecraft.damage_taken
+
+# 2. ピグリンがダメージを受けたら怒り状態にする
+execute as @e[type=minecraft:piglin,scores={piglinDamage=1..}] run data merge entity @s {AngerTime:600}
+
+# 3. スコアをリセットして次のダメージを検知可能にする
+execute as @e[type=minecraft:piglin,scores={piglinDamage=1..}] run scoreboard players reset @s piglinDamage
+
+# 1. スコアボードの作成
+#scoreboard objectives add witchDamage minecraft.custom:minecraft.damage_taken
+
+# 2. ウィッチがダメージを受けたら怒り状態にする
+#execute as @e[type=minecraft:witch,scores={witchDamage=1..}] run data merge entity @s {AngerTime:600}
+
+# 3. スコアをリセットして次のダメージを検知可能にする
+#execute as @e[type=minecraft:witch,scores={witchDamage=1..}] run scoreboard players reset @s witchDamage
+
+
+#execute as @e[type-minecraft:witch,nbt={CanJoinRaid:true},limit=1,sort=nearest]
+
+
+
+#/execute as @e[type=minecraft:witch,nbt={CanJoinRaid:0b},limit=1,sort=nearest] run data merge entity @s {CanJoinRaid:1b}
+
+

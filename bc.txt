@@ -1,0 +1,1 @@
+execute at @p run fill -6 -63 -6 6 -55 6 minecraft:blue_wool replace minecraft:diamond_block

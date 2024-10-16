@@ -1,4 +1,4 @@
-execute as @p at @p run summon minecraft:guardian ^ ^10 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+execute as @p at @p run summon minecraft:guardian ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
 effect give @e[type=minecraft:guardian,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
 
 #1. execute as @p at @p run summon minecraft:zombie ^ ^10 ^-2 {NoAI:0b,NoGravity:0b,CustomName:"\"弱ったバイさん\""}

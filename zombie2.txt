@@ -1,2 +1,2 @@
-execute as @a at @p run summon minecraft:zombie ^ ^10 ^-2 {Passengers:[{id:"minecraft:zombie",IsBaby:1b}],Attributes:[{Name:"generic.attackDamage",Base:10}],ArmorItems:[{},{},{},{}],NoAI:0b,NoGravity:0b,CustomName:"\"{ListenerName}\"",ActiveEffects:[{Id:5,Amplifier:1,Duration:999999}]}
-effect give @e[type=minecraft:zombie,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+execute as @a at @p run summon minecraft:zombie ^ ^3 ^-2 {Passengers:[{id:"minecraft:zombie",IsBaby:1b}],Attributes:[{Name:"generic.attackDamage",Base:10}],ArmorItems:[{},{},{},{}],NoAI:0b,NoGravity:0b,CustomName:"\"{ListenerName}\"",ActiveEffects:[{Id:5,Amplifier:1,Duration:999999}]}
+effect give @e[type=minecraft:zombie,sort=nearest,limit=30] minecraft:slow_falling 3 1 true

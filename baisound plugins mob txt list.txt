@@ -110,8 +110,11 @@
 金床                        anvil
 10分間強制雷雨               weather
 朝かつ晴れ                   weather2
+強制雷雨＋スケルトン          weather-skelton
 ワールド崩壊                 breakworld
-ゲームルールをリセットしたい場合はこちらの内容を変更 gamerule-reset
+ゲームルールをリセットしたい場合はこちらの内容を変更 gamerule-reset (gr)
+サバイバルゲームリセットしたい    gamerule-reset-suv
+
 自分以外でカミナリ落ちる       lightning_bold
 砂ブロック１段追加５０マップ    cp50x50
 砂ブロック１段追加１００マップ   cp100x100
@@ -120,3 +123,10 @@
 半分埋立５０マップ            dpb-50x50
 半分埋立１００マップ          dpb100x100
 モブ全キル(MOBx生物全キル)    mobkill
+ブロック変換                 bc
+スライム中                   slime2
+スライム大                   slime3
+お助け                      help
+頭上５マスからマグマ          magma
+豚召喚(本当は村人出したい)     villager2
+

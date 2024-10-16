@@ -1,9 +1,30 @@
 #cat
-execute as @p at @p run summon minecraft:cat ^ ^10 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+execute as @p at @p run summon minecraft:cat ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
 effect give @e[type=minecraft:cat,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+
 #cow
-execute as @p at @p run summon minecraft:cow ^ ^10 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+execute as @p at @p run summon minecraft:cow ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
 effect give @e[type=minecraft:cow,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+
 #pig
-execute as @p at @p run summon minecraft:pig ^ ^10 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+execute as @p at @p run summon minecraft:pig ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
 effect give @e[type=minecraft:pig,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+
+execute as @p at @p run summon minecraft:chicken ^ ^10 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:chicken,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+
+execute as @p at @p run summon minecraft:axolotl ^ ^10 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:axolotl,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+
+execute as @p at @p run summon minecraft:frog ^ ^3 ^-2 {Variant:2,NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:frog,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+
+execute as @p at @p run summon minecraft:turtle ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:turtle,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+
+execute as @p at @p run summon minecraft:ocelot ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:ocelot,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+
+#ひつじ
+execute as @p at @p run summon minecraft:sheep ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:sheep,sort=nearest,limit=1] minecraft:slow_falling 3 1 true

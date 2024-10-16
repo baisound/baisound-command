@@ -19,12 +19,4 @@ gamerule commandModificationBlockLimit 960000
 #落下ダメ無効
 gamerule fallDamage false
 
-#暗視効果
 effect give @a night_vision infinite
-
-#ブロック壊れた際にアイテムとしてドロップしない
-gamerule doTileDrops false
-
-#デバッグ画面表示情報の減少
-gamerule reducedDebugInfo true
-

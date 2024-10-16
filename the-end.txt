@@ -1,0 +1,7 @@
+execute at @p run fill -6 -63 -6 6 -49 6 minecraft:tnt
+execute at @p run summon minecraft:tnt -6 -55 -6  {Fuse:0}
+
+#execute at @p run fill -6 -63 -6 6 -49 6 composter replace tnt
+#execute at @a run fill -6 -63 -6 6 -49 6 minecraft:air replace composter
+#execute @e[type=item,name=骨粉] ~ ~ ~ run summon tnt
+#execute @e[type=item,name=骨粉] ~ ~ ~ run kill @s
