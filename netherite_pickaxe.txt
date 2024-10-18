@@ -1,0 +1,1 @@
+give @p minecraft:netherite_pickaxe{Enchantments:[{id:"efficiency",lvl:2}]} 1
