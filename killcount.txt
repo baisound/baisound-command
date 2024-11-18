@@ -1,0 +1,3 @@
+scoreboard objectives add death deathCount "デス数"
+scoreboard objectives setdisplay sidebar death
+scoreboard players set @a death 0

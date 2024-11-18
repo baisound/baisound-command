@@ -28,3 +28,6 @@ gamerule doTileDrops false
 #デバッグ画面表示情報の減少
 gamerule reducedDebugInfo true
 
+scoreboard objectives add death deathCount "デス数"
+scoreboard objectives setdisplay sidebar death
+scoreboard players set @a death 0

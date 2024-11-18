@@ -1,4 +1,4 @@
-execute as @p at @p run summon minecraft:creeper ~ ~ ~ {Fuse:40,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+execute as @p at @p run summon minecraft:creeper ~ ~ ~ {Fuse:15,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
 
 
 #1. execute as @p at @p run summon minecraft:zombie ^ ^10 ^-2 {NoAI:0b,NoGravity:0b,CustomName:"\"弱ったバイさん\""}
