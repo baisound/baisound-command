@@ -1,5 +1,6 @@
-# streamer: "baisound_games"
-# streamer: "corocoroarmadillo"
 tiktok:
+  # ログを保存するディレクトリ（デフォルト: logs/tiktok）
+  log_directory: "C:\\WorkFolders\\logs"  
+  # TikTok ID
   streamer: "baisound_games"
   defaultmobname: "弱ったバイさん"
