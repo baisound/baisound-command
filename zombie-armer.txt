@@ -1,6 +1,8 @@
 execute as @p at @p run summon zombie ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\"",HandItems:[{id:iron_sword,Count:1}],ArmorItems:[{id:iron_boots,Count:1},{id:iron_leggings,Count:1},{id:iron_chestplate,Count:1},{id:iron_helmet,Count:1}],ArmorDropChances:[0.0F,0.0F,0.0F,0.0F],HandDropChances:[0.0F]}
 effect give @e[type=minecraft:zombie,sort=nearest,limit=30] minecraft:slow_falling 3 1 true
 
+baisound {PlayerMe} zombie-skeleton 80 5 "\"{ListenerName}\""
+
 #1. execute as @p at @p run summon minecraft:zombie ^ ^10 ^-2 {NoAI:0b,NoGravity:0b,CustomName:"\"弱ったバイさん\""}
 #このコマンドは、現在のプレイヤーの位置を基準にして、ゾンビをプレイヤーの少し後ろかつ上空から召喚するために使用されます。
 #

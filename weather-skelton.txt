@@ -1,4 +1,4 @@
 weather thunder 600s
 #time set night
-baisound baisound lightning_bold 1 1 test
-baisound baisound skeleton 50 5 baisound
+baisound {PlayerMe} lightning_bold 1 1 test
+baisound {PlayerMe} skeleton 50 5 baisound

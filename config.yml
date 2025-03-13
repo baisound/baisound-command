@@ -1,8 +1,16 @@
+# TikTokストリーマー名（必須）
 tiktok:
-  # ログを保存するディレクトリ（デフォルト: logs/tiktok）
-  log_directory: "C:\\WorkFolders\\logs"  
-  # baisound plugin 2.0.1 追加項目 ギフトイメージ出力先
-  gift_directory: "C:\\WorkFolders\\logs\\giftimages"
-  # TikTok ID
-  streamer: "baisound_games"
-  defaultmobname: "弱ったバイさん"
+  reconnect_interval: 5
+  reconnect_timeout: 16
+  mytiktokid: "xxxxxxxxxxxx" # プラグイン起動時の私のTikTokユーザー名⓵
+  streamer: "xxxxxxxxxxxx" # TikTokストリーマーのユーザー名⓶
+  # ⓵と⓶は同じIDである事がほとんどです。ただし⓵は絶対に自分のユーザー名を設定してください
+targetPlayers: # このリストに指定したプレイヤーがジョインしたら発火
+  - xxxxxxxx
+
+commandBlockCheck:
+  blocks:
+    - x: -6
+      y: -62
+      z: 37
+      requiredCustomName: TrybaiCommandBlock
