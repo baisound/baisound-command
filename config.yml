@@ -1,8 +1,6 @@
 tiktok:
-  # ログを保存するディレクトリ（デフォルト: logs/tiktok）
-  log_directory: "C:\\WorkFolders\\logs"  
-  # baisound plugin 2.0.1 追加項目 ギフトイメージ出力先
-  gift_directory: "C:\\WorkFolders\\logs\\giftimages"
-  # TikTok ID
-  streamer: "baisound_games"
-  defaultmobname: "弱ったバイさん"
+  mytiktokid: "tiktokID" # 自分のtiktokIDを入力
+  streamer: xxxxxxxx # 自分のtiktokIDを入力
+
+targetPlayers: # Minecraftのゲームプレイヤー名を入力
+  - xxxxxxxx
