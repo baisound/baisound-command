@@ -1,6 +1,16 @@
+# TikTokストリーマー名（必須）
 tiktok:
-  mytiktokid: "tiktokID" # 自分のtiktokIDを入力
-  streamer: xxxxxxxx # 自分のtiktokIDを入力
-
-targetPlayers: # Minecraftのゲームプレイヤー名を入力
+  reconnect_interval: 5
+  reconnect_timeout: 16
+  mytiktokid: "xxxxxxxxxxxx" # プラグイン起動時の私のTikTokユーザー名⓵
+  streamer: "xxxxxxxxxxxx" # TikTokストリーマーのユーザー名⓶
+  # ⓵と⓶は同じIDである事がほとんどです。ただし⓵は絶対に自分のユーザー名を設定してください
+targetPlayers: # このリストに指定したプレイヤーがジョインしたら発火
   - xxxxxxxx
+
+commandBlockCheck:
+  blocks:
+    - x: -6
+      y: -62
+      z: 37
+      requiredCustomName: TrybaiCommandBlock
