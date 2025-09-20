@@ -1,0 +1,147 @@
+# Hardcore（過酷モード・絶望的難易度）
+roulette:
+  enabled: true
+  death_count_threshold: 25  # より頻繁に発動
+  cooldown_seconds: 10    # 長いクールダウン
+  reset_counter_on_trigger: false
+  ignore:
+    worlds: ["lobby"]
+    gamemodes: ["CREATIVE"]
+  safety:
+    invulnerable_seconds: 2   # 短い無敵時間
+    prevent_block_damage: false
+    keep_equipment: false
+
+fx:
+  title:
+    main: "&4&l☠ 過酷の審判 ☠"
+    sub: "&c{player} の運命が決まる..."
+    fadeIn: 10
+    stay: 60
+    fadeOut: 20
+  bossbar:
+    text: "&4&l💥 絶望のカウントダウン... {sec}s"
+    color: "RED"
+    style: "PROGRESS"
+    duration_seconds: 5
+  actionbar:
+    spinning: "&4&l⚡ 死神の審判… &c(残り {sec}s) &4⚡"
+    result_good: "&a&l†【奇跡】† &f{result_name}"
+    result_bad: "&4&l☠【絶望】☠ &f{result_name}"
+    result_fun: "&6&l【謎】 &f{result_name}"
+  sounds:
+    start: "ENTITY_WITHER_SPAWN"
+    tick: "BLOCK_PORTAL_AMBIENT"
+    end: "ENTITY_LIGHTNING_BOLT_THUNDER"
+  particles:
+    start:
+      type: "smoke_large"
+      count: 80
+      radius: 1.0
+    loop:
+      type: "portal"
+      count: 30
+      radius: 1.5
+    good:
+      type: "heart"
+      count: 3
+    bad:
+      type: "smoke_large"
+      count: 5
+    fun:
+      type: "enchant"
+      count: 10
+
+  entries:
+    # 僅かな救済 (20%の重み)
+    - id: "god_mode_3s"
+      name: "束の間の救済"
+      weight: 3
+      mood: "GOOD"
+      cmd:
+        - "effect give {player} minecraft:resistance 4 255 true"
+        - "effect give {player} minecraft:regeneration 4 1 true"
+
+    - id: "emergency_totem"
+      name: "最後の希望"
+      weight: 2
+      mood: "GOOD"
+      cmd:
+        - "give {player} minecraft:totem_of_undying 1"
+
+    - id: "brief_healing"
+      name: "微かな癒し"
+      weight: 3
+      mood: "GOOD"
+      cmd:
+        - "effect give {player} minecraft:instant_health 1 1 true"
+
+    # 過酷な試練 (80%の重み)
+    - id: "wither_curse"
+      name: "枯死の呪い"
+      weight: 12
+      mood: "BAD"
+      cmd:
+        - "effect give {player} minecraft:wither 60 2 true"
+
+    - id: "extreme_teleport"
+      name: "絶望の放逐"
+      weight: 10
+      mood: "BAD"
+      cmd:
+        - "spreadplayers {x} {z} 500 2000 false {player}"
+        - "effect give {player} minecraft:nausea 30 2 true"
+
+    - id: "death_sentence"
+      name: "死の宣告"
+      weight: 8
+      mood: "BAD"
+      cmd:
+        - "effect give {player} minecraft:poison 120 3 true"
+        - "effect give {player} minecraft:weakness 120 3 true"
+        - "effect give {player} minecraft:slowness 120 3 true"
+        - "effect give {player} minecraft:mining_fatigue 120 3 true"
+
+    - id: "void_fall"
+      name: "虚無への落下"
+      weight: 6
+      mood: "BAD"
+      cmd:
+        - "effect give {player} minecraft:levitation 20 5 true"
+
+    - id: "lightning_execution"
+      name: "天罰の雷"
+      weight: 7
+      mood: "BAD"
+      cmd:
+        - "summon minecraft:lightning_bolt {x} {y} {z}"
+        - "summon minecraft:lightning_bolt {x} {y} {z}"
+        - "effect give {player} minecraft:glowing 60 1 true"
+
+    - id: "starvation_curse"
+      name: "永劫の飢餓"
+      weight: 5
+      mood: "BAD"
+      cmd:
+        - "effect give {player} minecraft:hunger 300 5 true"
+        - "effect clear {player} minecraft:saturation"
+
+    - id: "shadow_prison"
+      name: "闇の牢獄"
+      weight: 4
+      mood: "BAD"
+      cmd:
+        - "effect give {player} minecraft:blindness 120 1 true"
+        - "effect give {player} minecraft:slowness 120 4 true"
+        - "effect give {player} minecraft:weakness 120 2 true"
+
+    - id: "chaos_storm"
+      name: "混沌の嵐"
+      weight: 3
+      mood: "BAD"
+      cmd:
+        - "summon minecraft:lightning_bolt ~ ~ ~"
+        - "summon minecraft:lightning_bolt ~10 ~ ~10"
+        - "summon minecraft:lightning_bolt ~-10 ~ ~-10"
+        - "effect give {player} minecraft:levitation 15 2 true"
+        - "effect give {player} minecraft:nausea 30 2 true"

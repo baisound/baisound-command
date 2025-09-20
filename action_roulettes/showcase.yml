@@ -1,0 +1,143 @@
+# Showcase（配信映え重視・演出重視）
+roulette:
+  enabled: true
+  death_count_threshold: 25
+  cooldown_seconds: 10
+  reset_counter_on_trigger: false
+  ignore:
+    worlds: ["lobby", "creative"]
+    gamemodes: ["CREATIVE", "SPECTATOR"]
+  safety:
+    invulnerable_seconds: 6
+    prevent_block_damage: true
+    keep_equipment: true
+  fx:
+    title:
+      main: "&6&l🎭 配信映えルーレット！"
+      sub: "&7{player} の運試し配信！"
+      fadeIn: 15
+      stay: 80
+      fadeOut: 25
+    bossbar:
+      text: "&d&l✨ 演出中…結果まで {sec}s"
+      color: "PURPLE"
+      style: "NOTCHED_12"
+      duration_seconds: 10
+    actionbar:
+      spinning: "&d✨ 演出中… &7(残り {sec}s)"
+      result_good: "&a&l【映え！】 &f{result_name}"
+      result_bad: "&c&l【ハラハラ】 &f{result_name}"
+      result_fun: "&e&l【エンタメ】 &f{result_name}"
+    sounds:
+      start: "entity.ender_dragon.growl"
+      tick: "ui.button.click"
+      finish_good: "entity.firework_rocket.twinkle"
+      finish_bad: "entity.wither.spawn"
+    particles:
+      start:
+        type: "totem_of_undying"
+        count: 150
+        radius: 1.5
+      loop:
+        type: "crit_magic"
+        count: 60
+        radius: 2.0
+      good:
+        type: "firework"
+        count: 5
+      bad:
+        type: "explosion_large"
+        count: 2
+      fun:
+        type: "happy_villager"
+        count: 25
+  entries:
+    # 派手な幸運系 (重み高め)
+    - id: "god_mode_10s"
+      name: "完全なる神の加護"
+      weight: 15
+      mood: "GOOD"
+      cmd:
+        - "effect give {player} minecraft:resistance 11 255 true"
+        - "effect give {player} minecraft:regeneration 11 3 true"
+        - "effect give {player} minecraft:absorption 11 4 true"
+
+    - id: "ultimate_speed"
+      name: "風神の翼"
+      weight: 12
+      mood: "GOOD"
+      cmd:
+        - "effect give {player} minecraft:speed 120 3 true"
+        - "effect give {player} minecraft:jump_boost 120 3 true"
+        - "effect give {player} minecraft:slow_falling 120 1 true"
+
+    - id: "treasure_shower"
+      name: "宝物の雨"
+      weight: 10
+      mood: "GOOD"
+      cmd:
+        - "give {player} minecraft:diamond 5"
+        - "give {player} minecraft:emerald 3"
+        - "give {player} minecraft:netherite_ingot 1"
+        - "give {player} minecraft:totem_of_undying 1"
+
+    - id: "lucky_effects"
+      name: "幸運の加護"
+      weight: 8
+      mood: "GOOD"
+      cmd:
+        - "effect give {player} minecraft:luck 600 2 true"
+        - "effect give {player} minecraft:haste 300 2 true"
+        - "effect give {player} minecraft:night_vision 600 1 true"
+
+    - id: "healing_fountain"
+      name: "生命の泉"
+      weight: 7
+      mood: "GOOD"
+      cmd:
+        - "effect give {player} minecraft:instant_health 1 5 true"
+        - "effect give {player} minecraft:saturation 1 5 true"
+        - "effect give {player} minecraft:regeneration 120 2 true"
+
+    # 派手な試練系 (重み低め - ショーケース用)
+    - id: "lightning_storm"
+      name: "雷雲の怒り"
+      weight: 8
+      mood: "BAD"
+      cmd:
+        - "summon minecraft:lightning_bolt {x} {y} {z}"
+        - "summon minecraft:lightning_bolt ~5 ~ ~"
+        - "summon minecraft:lightning_bolt ~-5 ~ ~"
+
+    - id: "chaos_teleport"
+      name: "次元の歪み"
+      weight: 6
+      mood: "BAD"
+      cmd:
+        - "spreadplayers {x} {z} 100 500 false {player}"
+        - "effect give {player} minecraft:nausea 10 1 true"
+
+    - id: "elemental_curse"
+      name: "四元素の呪い"
+      weight: 5
+      mood: "BAD"
+      cmd:
+        - "effect give {player} minecraft:poison 60 1 true"
+        - "effect give {player} minecraft:slowness 60 2 true"
+        - "effect give {player} minecraft:weakness 60 1 true"
+        - "effect give {player} minecraft:mining_fatigue 60 1 true"
+
+    - id: "gravity_chaos"
+      name: "重力の混乱"
+      weight: 4
+      mood: "BAD"
+      cmd:
+        - "effect give {player} minecraft:levitation 15 3 true"
+
+    - id: "darkness_veil"
+      name: "永遠の夜"
+      weight: 3
+      mood: "BAD"
+      cmd:
+        - "effect give {player} minecraft:blindness 60 1 true"
+        - "effect give {player} minecraft:slowness 60 2 true"

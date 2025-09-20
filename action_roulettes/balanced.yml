@@ -1,0 +1,130 @@
+roulette:
+  enabled: true
+  death_count_threshold: 20
+  cooldown_seconds: 10
+  reset_counter_on_trigger: false
+  safety:
+    invulnerable_seconds: 5
+    prevent_block_damage: true
+    keep_equipment: true
+  fx:
+    particles:
+      start:
+        type: "totem_of_undying"
+        count: 120
+        radius: 1.2
+      loop:
+        type: "crit_magic"
+        count: 45
+        radius: 1.8
+      good:
+        type: "firework"
+        count: 2
+      bad:
+        type: "explosion_large"
+        count: 1
+      fun:
+        type: "happy_villager"
+        count: 15
+    sounds:
+      start: "BLOCK_NOTE_BLOCK_HAT"
+      tick: "BLOCK_NOTE_BLOCK_PLING"
+      end: "ENTITY_PLAYER_LEVELUP"
+    actionbar:
+      spinning: "&e&l結果判定中… &7(残り {sec}s)"
+      result_good: "&a&l【幸運】 &f{result_name}"
+      result_bad: "&c&l【試練】 &f{result_name}"
+      result_fun: "&e&l【演出】 &f{result_name}"
+  entries:
+    # 幸運系 (40%の重み)
+    - id: "god_mode_5s"
+      name: "神の加護（5秒）"
+      weight: 8
+      mood: "GOOD"
+      cmd:
+        - "effect give {player} minecraft:resistance 6 255 true"
+        - "effect give {player} minecraft:regeneration 6 2 true"
+
+    - id: "speed_boost"
+      name: "疾風の恵み"
+      weight: 6
+      mood: "GOOD"
+      cmd:
+        - "effect give {player} minecraft:speed 60 2 true"
+        - "effect give {player} minecraft:jump_boost 60 1 true"
+
+    - id: "lucky_totem"
+      name: "幸運のトーテム"
+      weight: 4
+      mood: "GOOD"
+      cmd:
+        - "give {player} minecraft:totem_of_undying 1"
+
+    - id: "healing_burst"
+      name: "癒しの光"
+      weight: 7
+      mood: "GOOD"
+      cmd:
+        - "effect give {player} minecraft:instant_health 1 2 true"
+        - "effect give {player} minecraft:saturation 1 2 true"
+
+    - id: "diamond_gift"
+      name: "鉱石の恵み"
+      weight: 3
+      mood: "GOOD"
+      cmd:
+        - "give {player} minecraft:diamond 2"
+        - "give {player} minecraft:emerald 1"
+
+    # 試練系 (60%の重み)
+    - id: "lightning_strike"
+      name: "裁きの雷"
+      weight: 8
+      mood: "BAD"
+      cmd:
+        - "summon minecraft:lightning_bolt {x} {y} {z}"
+
+    - id: "poison_curse"
+      name: "毒の呪い"
+      weight: 6
+      mood: "BAD"
+      cmd:
+        - "effect give {player} minecraft:poison 30 1 true"
+        - "effect give {player} minecraft:slowness 30 1 true"
+
+    - id: "random_teleport"
+      name: "混沌の転移"
+      weight: 7
+      mood: "BAD"
+      cmd:
+        - "spreadplayers {x} {z} 50 100 false {player}"
+
+    - id: "weakness_curse"
+      name: "力の封印"
+      weight: 5
+      mood: "BAD"
+      cmd:
+        - "effect give {player} minecraft:weakness 60 1 true"
+        - "effect give {player} minecraft:mining_fatigue 60 1 true"
+
+    - id: "hunger_curse"
+      name: "飢餓の試練"
+      weight: 4
+      mood: "BAD"
+      cmd:
+        - "effect give {player} minecraft:hunger 120 2 true"
+
+    - id: "blindness_trial"
+      name: "闇の試練"
+      weight: 6
+      mood: "BAD"
+      cmd:
+        - "effect give {player} minecraft:blindness 20 1 true"
+        - "effect give {player} minecraft:slowness 20 2 true"
+
+    - id: "levitation_trap"
+      name: "浮遊の罠"
+      weight: 4
+      mood: "BAD"
+      cmd:
+        - "effect give {player} minecraft:levitation 10 2 true"

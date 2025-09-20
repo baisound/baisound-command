@@ -1,0 +1,9 @@
+baisound ent escaping "{ListenerName}" PRIMED_TNT PRIMED_TNT {playerMe}
+
+#ZOMBIEとCHICKENを任意のエンティティに変更してください。
+
+#最初のZOMBIEはチェストが破壊されるまでに召喚するMOBです。
+
+#後ろのCHICKENはチェストが破壊されたら出てくるMOBです。
+
+#注意としてエンティティは大文字でお願いします。小文字は反映しません。
