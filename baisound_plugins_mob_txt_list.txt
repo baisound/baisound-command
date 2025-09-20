@@ -126,7 +126,7 @@
 ブロック変換                 bc
 スライム中                   slime2
 スライム大                   slime3
-お助け                      help
+お助け(50x50埋め立て)        help
 頭上５マスからマグマ          magma
 豚召喚(本当は村人出したい)     villager2
 

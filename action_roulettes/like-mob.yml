@@ -1,371 +1,135 @@
-# Fullpack (映え特化・ご褒美多め)
+# like-mob.yml - TikTokいいね連動敵対MOBルーレット
+# バランス設計: 2000いいね=30コイン、100コイン=ゾンビ100体、500コイン=全ロスト
+
 roulette:
   enabled: true
-  death_count_threshold: 25
-  cooldown_seconds: 10
+  death_count_threshold: 0  # いいね連動のため死亡カウント無効
+  cooldown_seconds: 5
   reset_counter_on_trigger: false
+  disable_player_progression: false
   ignore:
     worlds: ["lobby","creative"]
     gamemodes: ["CREATIVE", "SPECTATOR"]
-#    permission_bypass: "roulette.bypass"
   safety:
-    invulnerable_seconds: 8
+    invulnerable_seconds: 5
     prevent_block_damage: true
-    keep_equipment: true
+    keep_equipment: false  # 敵対MOBなので装備保護なし
   fx:
     title:
-      main: "&6&l🎭 配信映えルーレット！"
-      sub: "&7{player} の運試し配信！"
+      main: "&c&l🔥 敵対MOB襲来！"
+      sub: "&e{like_count}いいねで召喚！"
       fadeIn: 10
-      stay: 60
-      fadeOut: 20
+      stay: 40
+      fadeOut: 15
     bossbar:
-      text: "&e&l⚡ 回転中…結果まで {sec}s"
-      color: "YELLOW"
+      text: "&c&l⚔ MOB選択中… {sec}s"
+      color: "RED"
       style: "PROGRESS"
-      duration_seconds: 6
+      duration_seconds: 4
     actionbar:
-      spinning: "&f抽選中… &7(残り {sec}s)"
-      result_good: "&a&l【歓喜】 &f{result_name}"
-      result_bad: "&c&l【阿鼻叫喚】 &f{result_name}"
+      spinning: "&c抽選中… &7(残り {sec}s)"
+      result_good: "&a&l【幸運】 &f{result_name}"
+      result_bad: "&c&l【敵襲】 &f{result_name}"
       result_fun: "&e&l【演出】 &f{result_name}"
     sounds:
-      start: "entity.ender_dragon.growl"
-      tick:  "ui.button.click"
-      finish_good: "entity.firework_rocket.twinkle"
-      finish_bad:  "entity.wither.spawn"
+      start: "entity.wither.spawn"
+      tick:  "entity.zombie.ambient"
+      finish_good: "entity.player.levelup"
+      finish_bad:  "entity.ghast.scream"
     particles:
       start:
-        type: "totem_of_undying"
-        count: 120
-        radius: 1.2
+        type: "soul_fire_flame"
+        count: 80
+        radius: 1.5
       loop:
-        type: "crit_magic"
-        count: 45
-        radius: 1.8
+        type: "smoke_large"
+        count: 30
+        radius: 2.0
       good:
-        type: "firework"
-        count: 2
+        type: "villager_happy"
+        count: 15
       bad:
         type: "explosion_large"
-        count: 1
+        count: 2
       fun:
-        type: "happy_villager"
-        count: 20
+        type: "enchant"
+        count: 25
   entries:
-    # GOOD（配信用ご褒美を多めにしつつ演出で映え）
-    - id: "god_mode_8s"
-      name: "神の加護（8秒）"
-      weight: 8
-      mood: "GOOD"
+    # 軽い脅威（30コイン価値・重み最高）
+    - id: "zombie_drop"
+      name: "ゾンビの急襲"
+      weight: 35
+      mood: "BAD"
       cmd:
-        - "effect give {player} minecraft:resistance 9 255 true"
-        - "effect give {player} minecraft:regeneration 9 2 true"
-        - "effect give {player} minecraft:absorption 9 4 true"
-    - id: "totem_combo"
-      name: "トーテム＋花火フィナーレ"
-      weight: 7
-      mood: "GOOD"
+        - "baisound {player} zombie 20 3 {sender}"
+    - id: "zombie_villager_curse"
+      name: "ゾンビ村人の呪い"
+      weight: 30
+      mood: "BAD"
       cmd:
-        - "give {player} minecraft:totem_of_undying 1"
-        - "summon firework_rocket ~ ~1 ~ {LifeTime:40}"
-        - "summon firework_rocket ~1 ~1 ~ {LifeTime:40}"
-        - "summon firework_rocket ~-1 ~1 ~ {LifeTime:40}"
-    - id: "elytra_45s"
-      name: "エリトラショー（45秒）"
-      weight: 6
-      mood: "GOOD"
+        - "baisound {player} zombie_villager 5 3 {sender}"
+    - id: "spider_jump"
+      name: "クモ跳躍"
+      weight: 25
+      mood: "FUN"
       cmd:
-        - "give {player} minecraft:elytra 1{display:{Name:'{\"text\":\"Temporary Elytra\"}'}}"
-        - "give {player} minecraft:firework_rocket 32"
-        - "execute as {player} run schedule function actionroulette:remove_elytra 45s"
-    - id: "xp_shower"
-      name: "経験値シャワー（+450pt）"
-      weight: 7
-      mood: "GOOD"
+        - "baisound {player} spider 5 3 {sender}"
+    - id: "creeper_surprise"
+      name: "いでよクリーパー"
+      weight: 20
+      mood: "FUN"
       cmd:
-        - "xp add {player} 450 points"
-        - "playsound minecraft:entity.experience_orb.pickup master {player} ~ ~ ~ 1 1"
-
-    # FUN（配信映えするが比較的安全）
-    - id: "confetti_ring"
-      name: "紙吹雪TNTリング（安全）"
-      weight: 6
-      mood: "GOOD"
+        - "baisound {player} creeper 3 3 {sender}"
+    # 中程度脅威（100-200コイン価値・重み中）
+    - id: "slime_bounce"
+      name: "スライム跳躍"
+      weight: 10
+      mood: "FUN"
       cmd:
-        - "execute at {player} run summon tnt ~1 ~ ~ {Fuse:30}"
-        - "execute at {player} run summon tnt ~-1 ~ ~ {Fuse:30}"
-        - "execute at {player} run summon tnt ~ ~ ~1 {Fuse:30}"
-        - "execute at {player} run summon tnt ~ ~ ~-1 {Fuse:30}"
-
-    # BAD（見た目ド派手・ブロック無傷）
-    - id: "lightning_parade"
-      name: "稲妻パレード（連鎖落雷）"
+        - "baisound {player} slime 8 3 {sender}"
+    - id: "phantom_dive"
+      name: "ファントム急降下"
       weight: 6
       mood: "BAD"
       cmd:
-        - "summon minecraft:lightning_bolt ~ ~ ~"
-        - "summon minecraft:lightning_bolt ~1 ~ ~"
-        - "summon minecraft:lightning_bolt ~-1 ~ ~"
-    - id: "mob_circle"
-      name: "取り巻きサプライズ（ゾンビ×6）"
+        - "baisound {player} phantom 1 3 {sender}"
+    - id: "blaze_fire"
+      name: "ブレイズ火炎"
       weight: 5
       mood: "BAD"
       cmd:
-        - "execute at {player} run summon zombie ~1 ~ ~"
-        - "execute at {player} run summon zombie ~-1 ~ ~"
-        - "execute at {player} run summon zombie ~ ~ ~1"
-        - "execute at {player} run summon zombie ~ ~ ~-1"
-        - "execute at {player} run summon zombie ~2 ~ ~"
-        - "execute at {player} run summon zombie ~ ~2 ~"
-    - id: "panic_tp"
-      name: "パニック転移（半径400）"
-      weight: 5
+        - "baisound {player} blaze 1 3 {sender}"
+    - id: "enderman_warp"
+      name: "エンダーマン瞬間移動"
+      weight: 4
+      mood: "FUN"
+      cmd:
+        - "baisound {player} enderman 1 3 {sender}"
+
+    # 重い脅威（1000コイン価値・重み超低）
+    - id: "warden_awaken"
+      name: "ウォーデン覚醒（極稀）"
+      weight: 1
       mood: "BAD"
       cmd:
-        - "spreadplayers ~ ~ 80 400 false {player}"
-    # 超レア（盛り上がり最大）
-    - id: "jackpot_totem_x2"
-      name: "ジャックポット：トーテム×2"
+        - "execute at @a run summon warden ~ ~1 ~"
+    - id: "ravager_charge"
+      name: "ラヴェジャー突進"
       weight: 2
+      mood: "BAD"
+      cmd:
+        - "baisound {player} ravager 1 3 {sender}"    
+    # 緩和・回復アクション（バランス調整）
+    - id: "healing_potion"
+      name: "回復ポーション"
+      weight: 20
       mood: "GOOD"
       cmd:
-        - "give {player} minecraft:totem_of_undying 2"
-        - "summon firework_rocket ~ ~1 ~ {LifeTime:50}"
-    - id: "elytra_show_60s"
-      name: "エリトラショー（60秒）"
-      weight: 3
-      mood: "GOOD"
-      cmd:
-        - "give {player} minecraft:elytra 1{display:{Name:'{\"text\":\"Temporary Elytra\"}'}}"
-        - "give {player} minecraft:firework_rocket 48"
-        - "execute as {player} run schedule function actionroulette:remove_elytra 60s"
-    - id: "xp_mega_800"
-      name: "経験値メガ（+800pt）"
+        - "give {player} minecraft:potion{Potion:\"minecraft:strong_healing\"} 2"
+    - id: "protection_boost"
+      name: "防御力強化（60秒）"
       weight: 4
       mood: "GOOD"
       cmd:
-        - "xp add {player} 800 points"
-
-    # 当たり（盛り上がる/そこそこ実利）
-    - id: "rich_bonus"
-      name: "賞金$5000 + ダイヤ×8"
-      weight: 5
-      mood: "GOOD"
-      cmd:
-        - "eco give {player} 5000"
-        - "give {player} minecraft:diamond 8"
-
-    # ハズレでも映える
-    - id: "lightning_camera"
-      name: "落雷カメラ（演出のみ）"
-      weight: 6
-      mood: "BAD"
-      cmd:
-        - "summon minecraft:lightning_bolt ~ ~ ~"
-    - id: "zombie_fans"
-      name: "ゾンビファン来場（×5）"
-      weight: 6
-      mood: "BAD"
-      cmd:
-        - "execute at {player} run summon zombie ~1 ~ ~"
-        - "execute at {player} run summon zombie ~-1 ~ ~"
-        - "execute at {player} run summon zombie ~ ~ ~1"
-        - "execute at {player} run summon zombie ~ ~ ~-1"
-        - "execute at {player} run summon zombie ~2 ~ ~"
-    - id: "panic_tp"
-      name: "パニック転移（半径600）"
-      weight: 6
-      mood: "BAD"
-      cmd:
-        - "spreadplayers ~ ~ 120 600 false {player}"
-    - id: "confetti_show"
-      name: "花火＆紙吹雪ショー"
-      weight: 10
-      mood: "GOOD"
-      cmd:
-        - "summon firework_rocket ~ ~1 ~ {LifeTime:40}"
-        - "summon firework_rocket ~1 ~1 ~ {LifeTime:40}"
-        - "summon firework_rocket ~-1 ~1 ~ {LifeTime:40}"
-    - id: "xp_good_300"
-      name: "経験値300"
-      weight: 8
-      mood: "GOOD"
-      cmd:
-        - "xp add {player} 300 points"
-    - id: "totem_gift"
-      name: "不死のトーテム"
-      weight: 6
-      mood: "GOOD"
-      cmd:
-        - "give {player} minecraft:totem_of_undying 1"
-    - id: "elytra_30s"
-      name: "エリトラ30秒（回収あり）"
-      weight: 6
-      mood: "GOOD"
-      cmd:
-        - "give {player} minecraft:elytra 1{display:{Name:'{\"text\":\"Temporary Elytra\"}'}}"
-        - "give {player} minecraft:firework_rocket 24"
-        - "execute as {player} run schedule function actionroulette:remove_elytra 30s"
-    - id: "safe_tnt_ring"
-      name: "安全TNTリング"
-      weight: 6
-      mood: "FUN"
-      cmd:
-        - "execute at {player} run summon tnt ~1 ~ ~ {Fuse:30}"
-        - "execute at {player} run summon tnt ~-1 ~ ~ {Fuse:30}"
-        - "execute at {player} run summon tnt ~ ~ ~1 {Fuse:30}"
-        - "execute at {player} run summon tnt ~ ~ ~-1 {Fuse:30}"
-    - id: "lightning_photo"
-      name: "落雷フォト（ダメージ軽減）"
-      weight: 5
-      mood: "FUN"
-      cmd:
-        - "effect give {player} minecraft:resistance 6 255 true"
-        - "summon minecraft:lightning_bolt ~ ~ ~"
-    - id: "mini_mob_circle"
-      name: "取り巻き（ゾンビ×3）"
-      weight: 5
-      mood: "FUN"
-      cmd:
-        - "execute at {player} run summon zombie ~1 ~ ~"
-        - "execute at {player} run summon zombie ~-1 ~ ~"
-        - "execute at {player} run summon zombie ~ ~ ~1"
-    - id: "short_tp"
-      name: "近距離転移（半径200）"
-      weight: 4
-      mood: "FUN"
-      cmd:
-        - "spreadplayers ~ ~ 60 200 false {player}"
-    - id: "chain_fireworks"
-      name: "花火→稲妻→紙吹雪（連鎖）"
-      weight: 8
-      mood: "GOOD"
-      cmd:
-        - "summon firework_rocket ~ ~1 ~ {LifeTime:30}"
-        - "summon minecraft:lightning_bolt ~ ~ ~"
-        - "summon firework_rocket ~1 ~1 ~ {LifeTime:30}"
-    - id: "chain_elytra"
-      name: "エリトラ→花火→回収（45秒）"
-      weight: 6
-      mood: "GOOD"
-      cmd:
-        - "give {player} minecraft:elytra 1{display:{Name:'{\"text\":\"Temporary Elytra\"}'}}"
-        - "give {player} minecraft:firework_rocket 24"
-        - "execute as {player} run schedule function actionroulette:remove_elytra 45s"
-    - id: "chain_xp"
-      name: "経験値連鎖（+400pt）"
-      weight: 6
-      mood: "GOOD"
-      cmd:
-        - "xp add {player} 400 points"
-        - "playsound minecraft:entity.experience_orb.pickup master {player} ~ ~ ~ 1 1"
-    - id: "chain_safe_tnt"
-      name: "TNTリング→稲妻（安全）"
-      weight: 6
-      mood: "FUN"
-      cmd:
-        - "execute at {player} run summon tnt ~1 ~ ~ {Fuse:30}"
-        - "execute at {player} run summon tnt ~-1 ~ ~ {Fuse:30}"
-        - "summon minecraft:lightning_bolt ~ ~ ~"
-    - id: "chain_mobs"
-      name: "ゾンビ×4→スロー（演出）"
-      weight: 6
-      mood: "BAD"
-      cmd:
-        - "execute at {player} run summon zombie ~1 ~ ~"
-        - "execute at {player} run summon zombie ~-1 ~ ~"
-        - "execute at {player} run summon zombie ~ ~ ~1"
-        - "execute at {player} run summon zombie ~ ~ ~-1"
-        - "effect give {player} minecraft:slowness 6 0 true"
-    - id: "chain_tp"
-      name: "短距離転移→花火（半径250）"
-      weight: 6
-      mood: "FUN"
-      cmd:
-        - "spreadplayers ~ ~ 50 250 false {player}"
-        - "summon firework_rocket ~ ~1 ~ {LifeTime:30}"
-    # 派手な幸運系 (重み高め)
-    - id: "god_mode_10s"
-      name: "完全なる神の加護"
-      weight: 15
-      mood: "GOOD"
-      cmd:
-        - "effect give {player} minecraft:resistance 11 255 true"
-        - "effect give {player} minecraft:regeneration 11 3 true"
-        - "effect give {player} minecraft:absorption 11 4 true"
-
-    - id: "ultimate_speed"
-      name: "風神の翼"
-      weight: 12
-      mood: "GOOD"
-      cmd:
-        - "effect give {player} minecraft:speed 120 3 true"
-        - "effect give {player} minecraft:jump_boost 120 3 true"
-        - "effect give {player} minecraft:slow_falling 120 1 true"
-
-    - id: "treasure_shower"
-      name: "宝物の雨"
-      weight: 10
-      mood: "GOOD"
-      cmd:
-        - "give {player} minecraft:diamond 5"
-        - "give {player} minecraft:emerald 3"
-        - "give {player} minecraft:netherite_ingot 1"
-        - "give {player} minecraft:totem_of_undying 1"
-
-    - id: "lucky_effects"
-      name: "幸運の加護"
-      weight: 8
-      mood: "GOOD"
-      cmd:
-        - "effect give {player} minecraft:luck 600 2 true"
-        - "effect give {player} minecraft:haste 300 2 true"
-        - "effect give {player} minecraft:night_vision 600 1 true"
-
-    - id: "healing_fountain"
-      name: "生命の泉"
-      weight: 7
-      mood: "GOOD"
-      cmd:
-        - "effect give {player} minecraft:instant_health 1 5 true"
-        - "effect give {player} minecraft:saturation 1 5 true"
-        - "effect give {player} minecraft:regeneration 120 2 true"
-    # 派手な試練系 (重み低め - ショーケース用)
-    - id: "lightning_storm"
-      name: "雷雲の怒り"
-      weight: 8
-      mood: "BAD"
-      cmd:
-        - "summon minecraft:lightning_bolt {x} {y} {z}"
-        - "summon minecraft:lightning_bolt ~5 ~ ~"
-        - "summon minecraft:lightning_bolt ~-5 ~ ~"
-    - id: "chaos_teleport"
-      name: "次元の歪み"
-      weight: 6
-      mood: "BAD"
-      cmd:
-        - "spreadplayers {x} {z} 100 500 false {player}"
-        - "effect give {player} minecraft:nausea 10 1 true"
-    - id: "elemental_curse"
-      name: "四元素の呪い"
-      weight: 5
-      mood: "BAD"
-      cmd:
-        - "effect give {player} minecraft:poison 60 1 true"
-        - "effect give {player} minecraft:slowness 60 2 true"
-        - "effect give {player} minecraft:weakness 60 1 true"
-        - "effect give {player} minecraft:mining_fatigue 60 1 true"
-    - id: "gravity_chaos"
-      name: "重力の混乱"
-      weight: 4
-      mood: "BAD"
-      cmd:
-        - "effect give {player} minecraft:levitation 15 3 true"
-    - id: "darkness_veil"
-      name: "永遠の夜"
-      weight: 3
-      mood: "BAD"
-      cmd:
-        - "effect give {player} minecraft:blindness 60 1 true"
-        - "effect give {player} minecraft:slowness 60 2 true"
+        - "effect give {player} minecraft:resistance 60 1 true"
+        - "effect give {player} minecraft:regeneration 60 0 true"

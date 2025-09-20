@@ -4,6 +4,7 @@ roulette:
   death_count_threshold: 25
   cooldown_seconds: 10
   reset_counter_on_trigger: false
+  disable_player_progression: false  # プレイヤー進行システム連携切断フラグ (true=切断, false=連携, デフォルト=false)
   ignore:
     worlds: ["lobby","creative"]
     gamemodes: ["CREATIVE", "SPECTATOR"]

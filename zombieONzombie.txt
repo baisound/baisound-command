@@ -1,0 +1,1 @@
+execute as @a at @p run summon minecraft:zombie ^ ^3 ^-2 {CustomName:"\"{ListenerName}\"",CustomNameVisible:1b,Passengers:[{id:"minecraft:zombie",CustomName:"\"{ListenerName}\"",CustomNameVisible:1b,ActiveEffects:[{Id:12,Amplifier:0,Duration:400,ShowParticles:0b}]}]}
