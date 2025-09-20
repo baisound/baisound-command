@@ -130,10 +130,6 @@
 頭上５マスからマグマ          magma
 豚召喚(本当は村人出したい)     villager2
 
-ダイヤ装備                   daiyasoubi
-ネザーライト装備              nezaraitosoubi
-ピッケル没収                 pikkerubossyuu
-
 整地用砂ブロック黒 seichi_black_cp50x50
 整地用砂ブロック白 seichi_white_cp50x50
 整地用砂ブロック灰色 seichi_light_gray_cp50x50

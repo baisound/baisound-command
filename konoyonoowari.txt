@@ -1,0 +1,28 @@
+execute as @p at @p run summon minecraft:wither ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:wither,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+execute as @p at @p run summon minecraft:wither ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:wither,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+execute as @p at @p run summon minecraft:wither ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:wither,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+execute as @p at @p run summon minecraft:wither ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:wither,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+execute as @p at @p run summon minecraft:wither ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:wither,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+execute as @p at @p run summon minecraft:wither ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:wither,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+execute as @p at @p run summon minecraft:wither ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:wither,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+execute as @p at @p run summon minecraft:wither ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:wither,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+execute as @p at @p run summon minecraft:wither ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:wither,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+execute as @p at @p run summon minecraft:wither ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:wither,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+execute at @a run summon warden ~ ~1 ~
+execute at @a run summon warden ~ ~1 ~
+execute at @a run summon warden ~ ~1 ~
+execute at @a run summon warden ~ ~1 ~
+execute at @a run summon warden ~ ~1 ~
+execute at @p run fill ~7 ~37 ~-7 ~-7 ~5 ~7 minecraft:tnt
+execute at @p run fill ~ ~10 ~ ~ ~10 ~ minecraft:redstone_block
+effect give @p minecraft:regeneration 15 5

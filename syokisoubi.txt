@@ -1,0 +1,8 @@
+item replace entity @p armor.head with minecraft:iron_helmet
+item replace entity @p armor.chest with minecraft:iron_chestplate
+item replace entity @p armor.legs with minecraft:iron_leggings
+item replace entity @p armor.feet with minecraft:iron_boots
+execute at @a run give @a netherite_sword
+execute at @a run give @a golden_carrot 64
+execute at @a run give @a stone_pickaxe
+execute at @a run give @a dirt 64
