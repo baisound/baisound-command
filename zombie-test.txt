@@ -1,0 +1,2 @@
+execute as @p at @p run summon minecraft:zombie ^ ^3 ^ {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:zombie,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
