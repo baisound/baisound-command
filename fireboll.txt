@@ -1,0 +1,11 @@
+# 南（自分の南3m → 北向きに飛来）
+execute as @p at @p run summon minecraft:fireball ~ ~1.62 ~3 {ExplosionPower:5,Motion:[0.0,0.0,-1.0]}
+
+# 北（自分の北3m → 南向きに飛来）
+execute as @p at @p run summon minecraft:fireball ~ ~1.62 ~-3 {ExplosionPower:5,Motion:[0.0,0.0,1.0]}
+
+# 東（自分の東3m → 西向きに飛来）
+execute as @p at @p run summon minecraft:fireball ~3 ~1.62 ~ {ExplosionPower:5,Motion:[-1.0,0.0,0.0]}
+
+# 西（自分の西3m → 東向きに飛来）
+execute as @p at @p run summon minecraft:fireball ~-3 ~1.62 ~ {ExplosionPower:5,Motion:[1.0,0.0,0.0]}

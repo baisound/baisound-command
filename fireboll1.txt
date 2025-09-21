@@ -1,0 +1,1 @@
+execute as @p at @p run summon minecraft:fireball ~ ~1 ~ {ExplosionPower:30,Motion:[0.0,-1.0,0.0]}
