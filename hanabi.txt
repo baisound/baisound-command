@@ -1,11 +1,19 @@
-# 1. ウォーデンを召喚
-execute as @p at @p run summon minecraft:warden ^ ^3 ^
-# 2. 名前付きウォーデンにタグをつける
-execute as @e[type=warden] if data entity @s CustomName run tag @s add named
-# 3. 名前なしウォーデンにだけ名前をつける
-execute as @e[type=warden,tag=!named] run data merge entity @s {PersistenceRequired:1b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
-# 4. タグを削除（オプション）
-tag @e[type=warden,tag=named] remove named
+title @a title {"text":"🎆 花火大会 開催！ 🎆","color":"gold","bold":true}
+
+playsound minecraft.entity.firework_rocket.launch ambient @a ~ ~ ~ 1.2 1
+
+execute as @p at @p run summon firework_rocket ~ ~2 ~ {LifeTime:25,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:2,Explosions:[{Type:4,Flicker:1,Trail:1,Colors:[I;11743532,3887386],FadeColors:[I;15790320,15435844]}]}}}}
+
+execute as @p at @p run summon firework_rocket ~1 ~2 ~ {LifeTime:30,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:3,Explosions:[{Type:4,Flicker:1,Trail:1,Colors:[I;14602026,4312372],FadeColors:[I;1973019]}]}}}}
+
+execute as @p at @p run summon firework_rocket ~-1 ~2 ~ {LifeTime:22,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:2,Explosions:[{Type:4,Flicker:1,Trail:1,Colors:[I;15435844,11743532],FadeColors:[I;14602026]}]}}}}
+
+execute as @p at @p run summon firework_rocket ~ ~2 ~1 {LifeTime:27,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:2,Explosions:[{Type:4,Flicker:1,Trail:1,Colors:[I;1973019,3887386],FadeColors:[I;15435844]}]}}}}
+
+execute as @p at @p run summon firework_rocket ~ ~2 ~-1 {LifeTime:20,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:1,Explosions:[{Type:4,Flicker:1,Trail:1,Colors:[I;4312372,15790320],FadeColors:[I;14602026,11743532]}]}}}}
+
+playsound minecraft.entity.generic.explode ambient @a ~ ~ ~ 0.8 0.9
+
 
 
 #1. execute as @p at @p run summon minecraft:zombie ^ ^10 ^-2 {NoAI:0b,NoGravity:0b,CustomName:"\"弱ったバイさん\""}

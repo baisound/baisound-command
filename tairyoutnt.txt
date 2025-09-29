@@ -1,0 +1,10 @@
+execute at @p run summon tnt ~ ~1 ~ {fuse:50}
+execute at @p run summon tnt ~ ~2 ~ {fuse:52}
+execute at @p run summon tnt ~ ~3 ~ {fuse:54}
+execute at @p run summon tnt ~ ~4 ~ {fuse:56}
+execute at @p run summon tnt ~ ~5 ~ {fuse:58}
+execute at @p run summon tnt ~ ~6 ~ {fuse:70}
+execute at @p run summon tnt ~ ~7 ~ {fuse:72}
+execute at @p run summon tnt ~ ~8 ~ {fuse:74}
+execute at @p run summon tnt ~ ~9 ~ {fuse:76}
+execute at @p run summon tnt ~ ~10 ~ {fuse:78}

@@ -1,12 +1,8 @@
-# 1. ウォーデンを召喚
-execute as @p at @p run summon minecraft:warden ^ ^3 ^
-# 2. 名前付きウォーデンにタグをつける
-execute as @e[type=warden] if data entity @s CustomName run tag @s add named
-# 3. 名前なしウォーデンにだけ名前をつける
-execute as @e[type=warden,tag=!named] run data merge entity @s {PersistenceRequired:1b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
-# 4. タグを削除（オプション）
-tag @e[type=warden,tag=named] remove named
-
+execute as @p at @p run summon minecraft:ender_dragon ^ ^10 ^-2 {CustomName:"\"{ListenerName}\""}
+# プレイヤーの位置にターゲットを向ける
+data modify entity @e[type=ender_dragon,limit=1,sort=nearest] TargetPosition set from entity @p Pos
+# ドラゴンをプレイヤーに突進させるフェーズに変更
+data merge entity @e[type=ender_dragon,limit=1,sort=nearest] {DragonPhase:6}
 
 #1. execute as @p at @p run summon minecraft:zombie ^ ^10 ^-2 {NoAI:0b,NoGravity:0b,CustomName:"\"弱ったバイさん\""}
 #このコマンドは、現在のプレイヤーの位置を基準にして、ゾンビをプレイヤーの少し後ろかつ上空から召喚するために使用されます。

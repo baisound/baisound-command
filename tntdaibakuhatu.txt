@@ -1,0 +1,2 @@
+execute at @p run fill ~7 ~37 ~-7 ~-7 ~5 ~7 minecraft:tnt
+execute at @p run fill ~ ~4 ~ ~ ~4 ~ minecraft:redstone_block
