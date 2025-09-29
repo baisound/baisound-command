@@ -91,7 +91,7 @@
 ★ボスmob	                    ID
 
 ウィザー                    wither
-※エンダードラゴン　        ender_dragon   出るがAIが動かない
+エンダードラゴン             ender_dragon ・・・きちんと襲ってきます
 
 ★通常では登場しないmob	    ID
 
@@ -99,6 +99,8 @@
 ※殺人ウサギ                kirarabbit.txtを参考にしてください
 ※ジャイアント              giant　　　　　　旧バージョンでしか動かないただのオブジェ
 ゾンビホース　　　　　　　　zombie_horse
+肩車ゾンビ                 zombiekataguruma
+ゾンビONゾンビ              zombieONzombie
 
 ★MOB以外のコマンド	         ID
 
@@ -130,8 +132,11 @@
 頭上５マスからマグマ          magma
 豚召喚(本当は村人出したい)     villager2
 
+鉄装備                       syokisoubi
 ダイヤ装備                   daiyasoubi
 ネザーライト装備              nezaraitosoubi
+ネザーライト装備                   saikyousoubi
+
 ピッケル没収                 pikkerubossyuu
 
 整地用砂ブロック黒 seichi_black_cp50x50
@@ -151,4 +156,10 @@
 整地用砂ブロックマゼンタ seichi_magenta_cp50x50
 整地用砂ブロックピンク seichi_pink_cp50x50
 
-
+動物いっぱい               animals_happy
+花火                      hanabi
+かみなり                  kaminari
+この世の終わり             konoyonoowari
+大量TNT                  tairyoutnt
+TNT大爆発                tntdaibakuhatu
+頭上マグマ                zuzyoumaguma
