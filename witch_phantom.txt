@@ -1,0 +1,1 @@
+summon minecraft:phantom ~ ~30 ~ {NoGravity:1b, CustomName:"\"{ListenerName}\"", CustomNameVisible:1b, Passengers:[{id:"minecraft:witch", CustomName:"\"{ListenerName}\"", CustomNameVisible:1b, ActiveEffects:[{Id:12,Amplifier:0,Duration:999999,ShowParticles:0b}]}]}
