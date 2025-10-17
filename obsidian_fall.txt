@@ -1,0 +1,6 @@
+execute at @p run summon minecraft:falling_block ~ ~10 ~ {BlockState:{Name:"minecraft:obsidian"},Time:1}
+execute at @p run summon minecraft:falling_block ~ ~11 ~ {BlockState:{Name:"minecraft:obsidian"},Time:1}
+execute at @p run summon minecraft:falling_block ~ ~12 ~ {BlockState:{Name:"minecraft:obsidian"},Time:1}
+
+
+#1.頭上に落ちる黒曜石を召喚

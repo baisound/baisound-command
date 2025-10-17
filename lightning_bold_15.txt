@@ -1,0 +1,5 @@
+execute at @p[distance=1..] run execute at @e[type=!minecraft:player,limit=15] run summon minecraft:lightning_bolt ~ ~ ~
+
+
+
+

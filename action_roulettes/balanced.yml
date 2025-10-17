@@ -1,5 +1,5 @@
 roulette:
-  enabled: true
+  enabled: false
   death_count_threshold: 20
   cooldown_seconds: 10
   reset_counter_on_trigger: false

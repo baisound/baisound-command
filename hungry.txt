@@ -1,0 +1,6 @@
+effect give @p minecraft:hunger 30 255
+
+# 〇概要
+#  プレイヤーを空腹状態に
+# 〇詳細
+#  一定時間 Hunger 効果を付与

@@ -1,0 +1,28 @@
+execute as @p at @p run summon minecraft:axolotl 0 67 0 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:axolotl,sort=nearest,limit=30] minecraft:slow_falling 3 1 true
+
+execute as @p at @p run summon minecraft:squid 0 67 0 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:axolotl,sort=nearest,limit=30] minecraft:slow_falling 3 1 true
+
+execute as @p at @p run summon minecraft:turtle 0 67 0 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:axolotl,sort=nearest,limit=30] minecraft:slow_falling 3 1 true
+
+execute as @p at @p run summon minecraft:salmon 0 67 0 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:axolotl,sort=nearest,limit=30] minecraft:slow_falling 3 1 true
+
+execute as @p at @p run summon minecraft:cod 0 67 0 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:axolotl,sort=nearest,limit=30] minecraft:slow_falling 3 1 true
+
+execute as @p at @p run summon minecraft:tropicalfish 0 67 0 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:axolotl,sort=nearest,limit=30] minecraft:slow_falling 3 1 true
+
+execute as @p at @p run summon minecraft:glow_squid 0 67 0 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:axolotl,sort=nearest,limit=30] minecraft:slow_falling 3 1 true
+
+execute as @p at @p run summon minecraft:pufferfish 0 67 0 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:axolotl,sort=nearest,limit=30] minecraft:slow_falling 3 1 true
+
+execute as @p at @p run summon minecraft:dolphin 0 67 0 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+effect give @e[type=minecraft:axolotl,sort=nearest,limit=30] minecraft:slow_falling 3 1 true
+
+#1.

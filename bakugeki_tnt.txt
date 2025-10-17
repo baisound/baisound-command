@@ -1,0 +1,5 @@
+tp @a 0 70 0
+execute as @p at @p run summon tnt 0 80 0 {Fuse:80}
+
+#0.キャラクターを一度ブロックの上空に飛ばす
+#1.TNTを指定座標に召喚

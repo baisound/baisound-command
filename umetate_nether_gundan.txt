@@ -1,0 +1,3 @@
+nethergate {player} 25 {ListenerName}
+
+#1.ゾグリンに乗ったゾンビピグリンが数字*3出てくる

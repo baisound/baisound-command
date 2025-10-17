@@ -1,12 +1,12 @@
 options:
   - text: "砂2段追加"
-    command: "baisound {PleyerMe} cp50x50 1 1 test"
+    command: "baisound {PleyerMe} cp50x50 1 1 <sender>"
   - text: "砂4段追加"
-    command: "baisound {PleyerMe} cp50x50 2 1 test"
+    command: "baisound {PleyerMe} cp50x50 2 1 <sender>"
   - text: "ゾンビ５０体"
-    command: "baisound {PleyerMe} zombie 50 3 test"
+    command: "baisound {PleyerMe} zombie 50 3 <sender>"
   - text: "強制雨"
-    command: "baisound {PleyerMe} weather 1 1 test"
+    command: "baisound {PleyerMe} weather 1 1 <sender>"
 sound_effects:
   start: "BLOCK_NOTE_BLOCK_HAT"
   tick: "BLOCK_NOTE_BLOCK_PLING"

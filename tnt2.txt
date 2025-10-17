@@ -1,4 +1,4 @@
-tp @a 2 -14 1
+tp @a 0 72 0
 execute as @p at @p run summon tnt ~ ~5 ~ {Fuse:80} 
 execute as @p at @p run summon tnt ~5 ~25 ~ {Fuse:80} 
 execute as @p at @p run summon tnt ~ ~35 ~5 {Fuse:80} 

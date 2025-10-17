@@ -52,7 +52,7 @@
 ウィッチ                    witch
 ヴィンディケーター          vindicator
 ヴェックス                  vex
-※ウォーデン　              warden         すぐに地面に潜ってデスポンしてしまう
+ウォーデン　              warden         修正完了
 エヴォーカー　　　　　　　　evoker
 エルダーガーディアン　　　　elder_guardian
 エンダーマイト　　　　　　　endermite
@@ -91,7 +91,7 @@
 ★ボスmob	                    ID
 
 ウィザー                    wither
-※エンダードラゴン　        ender_dragon   出るがAIが動かない
+エンダードラゴン　        ender_dragon   修正完了
 
 ★通常では登場しないmob	    ID
 
@@ -147,4 +147,26 @@
 整地用砂ブロックマゼンタ seichi_magenta_cp50x50
 整地用砂ブロックピンク seichi_pink_cp50x50
 
+
+
+#埋め立て図書館用
+砂ブロック１段追加５０マップ    libraly_cp50x50
+ブロック消し５０マップ         libraly_rb50x50
+半分埋立５０マップ            libraly_dpb-50x50
+砂ブロック黒                 libraly_cp50x50_black
+砂ブロック白                 libraly_cp50x50_white
+砂ブロック灰色               libraly_cp50x50_gray
+砂ブロックグレイ              seichi_gray_cp50x50
+砂ブロック茶                  libraly_cp50x50_brown
+砂ブロック赤                  libraly_cp50x50_red
+砂ブロックオレンジ             libraly_cp50x50_orange
+砂ブロック黄色                libraly_cp50x50_yellow
+砂ブロック緑                  libraly_cp50x50_green
+砂ブロックスカイブルー         libraly_cp50x50_light_blue
+砂ブロック淡緑                libraly_cp50x50_lime
+砂ブロックシアン             libraly_cp50x50_cyan
+砂ブロック青                libraly_cp50x50_blue
+砂ブロック紫                libraly_cp50x50_purple
+砂ブロックマゼンタ           libraly_cp50x50_magenta
+砂ブロックピンク             libraly_cp50x50_pink
 

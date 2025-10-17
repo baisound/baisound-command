@@ -1,1 +1,2 @@
-execute at @p run fill 6 64 6 -6 64 -6 minecraft:cyan_concrete_powder
+title @p title {"text":"砂追加","color":"green","extra":[{"text":"","color":"white"}]}
+execute at @p run fill 6 124 6 -6 124 -6 minecraft:cyan_concrete_powder

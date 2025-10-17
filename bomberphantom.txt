@@ -1,0 +1,3 @@
+bomberphantom {player} {ListenerName}
+
+#1. ミサイルを撃ってくるファントム、一定時間後に自爆特攻。

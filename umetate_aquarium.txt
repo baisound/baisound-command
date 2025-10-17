@@ -1,0 +1,5 @@
+delayrun 0 makeaquarium {player} 8 49 8 -8 65 -8 300 ; 1 baisound {player} umetate_aqa_animals 25 10 {ListenerName}
+
+#1.遅延コマンドをちょっと入れてます。
+
+#2.makeaquarium {player} 8 49 8 -8 65 -8 300　座標を2点指定して　後ろの300が秒です。300秒＝5分。

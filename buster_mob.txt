@@ -1,0 +1,3 @@
+buster bokachi IRON_GOLEM {ListenerName}
+
+#1.足の速いゴーレムが筋肉バスターしかけてくる。

@@ -1,0 +1,3 @@
+execute as @p at @p run summon minecraft:wolf ~ ~ ~ {Owner:"\"{player}\"", CollarColor:10,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
+
+#フレンドリーな狼、攻撃したら死ぬまで襲ってくるが死んだら仲良し

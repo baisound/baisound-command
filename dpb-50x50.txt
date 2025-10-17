@@ -1,1 +1,2 @@
-execute at @p run fill 6 -13 6 -6 -6 -6 minecraft:blue_concrete_powder
+execute at @p run fill 6 49 6 -6 56 -6 minecraft:blue_concrete_powder
+

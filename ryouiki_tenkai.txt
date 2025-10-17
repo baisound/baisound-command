@@ -1,0 +1,7 @@
+delayrun 0 areastore ryouiki_tenkai 35 -1 45 -35 22 -36 ; 0 eventtimer 14 ; 11 areapaste ryouiki_tenkai -35 48 -36 ; 7 baisound {player} ghast 30 5 {ListenerName}
+#1.areastore ryouiki_tenkai 35 -1 45 -35 22 -36
+
+#1.areapaste ryouiki_tenkai -35 48 -36
+
+
+#1. /delayrun 0 areastore ryouiki_tenkai 35 -1 45 -35 22 -36 ; 10 areapaste ryouiki_tenkai -35 48 -36 ; 10 baisound {player} ghast 30 5 {ListenerName}

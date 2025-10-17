@@ -1,0 +1,2 @@
+title @p title {"text":"砂追加","color":"green","extra":[{"text":"","color":"white"}]}
+execute at @p run fill 6 112 6 -6 112 -6 minecraft:brown_concrete_powder

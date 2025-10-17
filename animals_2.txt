@@ -1,0 +1,64 @@
+#cat
+execute as @p at @p run summon minecraft:cat ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:""{ListenerName}""}
+effect give @e[type=minecraft:cat,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+
+#cow
+execute as @p at @p run summon minecraft:cow ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:""{ListenerName}""}
+effect give @e[type=minecraft:cow,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+
+#pig
+execute as @p at @p run summon minecraft:pig ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:""{ListenerName}""}
+effect give @e[type=minecraft:pig,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+
+#chicken
+execute as @p at @p run summon minecraft:chicken ^ ^10 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:""{ListenerName}""}
+effect give @e[type=minecraft:chicken,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+
+#axolotl
+execute as @p at @p run summon minecraft:axolotl ^ ^10 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:""{ListenerName}""}
+effect give @e[type=minecraft:axolotl,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+
+#frog
+execute as @p at @p run summon minecraft:frog ^ ^3 ^-2 {Variant:2,NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:""{ListenerName}""}
+effect give @e[type=minecraft:frog,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+
+#pig
+execute as @p at @p run summon minecraft:turtle ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:""{ListenerName}""}
+effect give @e[type=minecraft:turtle,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+
+#ocelot
+execute as @p at @p run summon minecraft:ocelot ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:""{ListenerName}""}
+effect give @e[type=minecraft:ocelot,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+
+#ひつじ
+execute as @p at @p run summon minecraft:sheep ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:""{ListenerName}""}
+effect give @e[type=minecraft:sheep,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+
+#zombie_horse
+execute as @p at @p run summon minecraft:zombie_horse ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:""{ListenerName}""}
+effect give @e[type=minecraft:zombie_horse,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+
+
+#panda
+execute as @p at @p run summon minecraft:panda ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:""{ListenerName}""}
+effect give @e[type=minecraft:panda,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+
+#horse
+execute as @p at @p run summon minecraft:horse ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:""{ListenerName}""}
+effect give @e[type=minecraft:horse,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+
+#fox
+execute as @p at @p run summon minecraft:fox ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:""{ListenerName}""}
+effect give @e[type=minecraft:fox,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+
+#bat
+execute as @p at @p run summon minecraft:bat ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:""{ListenerName}""}
+effect give @e[type=minecraft:bat,sort=nearest,limit=30] minecraft:slow_falling 3 1 true
+
+#llama
+execute as @p at @p run summon minecraft:llama ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:""{ListenerName}""}
+effect give @e[type=minecraft:llama,sort=nearest,limit=1] minecraft:slow_falling 3 1 true
+
+#polar_bear
+execute as @p at @p run summon minecraft:polar_bear ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:""{ListenerName}""}
+effect give @e[type=minecraft:polar_bear,sort=nearest,limit=1] minecraft:slow_falling 3 1 true

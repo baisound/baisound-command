@@ -1,0 +1,1 @@
+voidbomb spawn -25 49 -25 25 72 25 1

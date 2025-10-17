@@ -1,0 +1,5 @@
+execute at @p run fill 6 49 -6 -6 63 6 light_blue_wool replace diamond_block
+
+
+#14
+#6 49 -6 -6 56 6 

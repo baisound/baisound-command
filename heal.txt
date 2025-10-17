@@ -1,0 +1,6 @@
+effect give @p minecraft:regeneration 15 5
+
+# 〇概要
+#  プレイヤーを回復
+# 〇詳細
+#  15秒間再生効果Lv5を付与

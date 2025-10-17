@@ -1,0 +1,3 @@
+voidbomb spawn {player} 1
+
+#1.プレイヤー周辺に発生する爆発するもやもや

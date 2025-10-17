@@ -1,2 +1,5 @@
-execute at @p run fill ~7 ~37 ~-7 ~-7 ~5 ~7 minecraft:tnt
-execute at @p run fill ~ ~4 ~ ~ ~4 ~ minecraft:redstone_block
+execute at @p run fill 6 49 6 -6 63 -6 minecraft:tnt
+
+give @p minecraft:flint_and_steel{Unbreakable:1b}
+
+# 枠内TNTで埋めて火打石を付与

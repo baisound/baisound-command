@@ -1,0 +1,3 @@
+mixcharge {ListenerName}
+
+#1.ラベジャーに攻撃されると竜巻が出る（一回のみ）
