@@ -1,0 +1,10 @@
+execute as @p at @p run summon minecraft:wolf ~ ~ ~ {Tags:["tempWolf"],CollarColor:10,CustomNameVisible:1b,CustomName:"\"{ListenerName}\"",Attributes:[{Name:"generic.max_health",Base:15},{Name:"generic.attack_damage",Base:40}],Health:15f,Tame:1b}
+
+effect give @e[type=wolf,tag=tempWolf] resistance 99999 2 true
+effect give @e[type=wolf,tag=tempWolf] regeneration 99999 2 true
+
+data modify entity @e[type=wolf,tag=tempWolf,sort=nearest,limit=1] Owner set from entity @p UUID
+
+tag @e[type=wolf,tag=tempWolf,sort=nearest,limit=1] remove tempWolf
+
+#フレンドリーな狼、回復付き
