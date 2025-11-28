@@ -1,0 +1,6 @@
+# TITLE: 鉄ピッケル！
+# SUBTITLE: 鉄のピッケル付与
+# CATEGORY: お助け系
+# GENRE: 埋め立て|整地|サバイバル|積み上げ|採掘
+# CONSOLE: baisound <player> get_iron_pickaxe 1 1 <sender>
+execute at @a run give @a minecraft:iron_pickaxe

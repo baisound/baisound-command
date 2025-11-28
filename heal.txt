@@ -1,0 +1,6 @@
+# TITLE: 回復！
+# SUBTITLE: 回復支援
+# CATEGORY: お助け系
+# GENRE: 埋め立て|整地|サバイバル|積み上げ|採掘
+# CONSOLE: baisound <player> heal 1 1 <sender>
+effect give @p minecraft:regeneration 15 5

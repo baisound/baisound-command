@@ -1,3 +1,9 @@
+# TITLE: 動物いっぱい！
+# SUBTITLE: 色々な種類の動物を召喚
+# CATEGORY: 友好MOB
+# GENRE: 埋め立て|整地|サバイバル|積み上げ|採掘
+# CONSOLE: baisound <player> animals 1 1 <sender>
+
 #cat
 execute as @p at @p run summon minecraft:cat ^ ^3 ^-2 {NoAI:0b,NoGravity:0b,CustomNameVisible:1b,CustomName:"\"{ListenerName}\""}
 effect give @e[type=minecraft:cat,sort=nearest,limit=1] minecraft:slow_falling 3 1 true

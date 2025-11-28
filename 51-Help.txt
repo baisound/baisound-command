@@ -1,0 +1,9 @@
+# TITLE: お助けブロック！
+# SUBTITLE: 金ブロックで埋め立て
+# CATEGORY: お助け系
+# GENRE: 埋め立て
+# CONSOLE: baisound <player> 51-Help 1 1 <sender>
+title @p title {"text":"お助け","color":"green","extra":[{"text":"","color":"white"}]}
+execute at @p run fill 6 49 -6 -6 56 6 minecraft:gold_block
+# 効果: 広範囲を金ブロックで埋めて足場提供（/fill）
+# 範囲: 絶対座標 -7 62 36 ～ 7 70 22

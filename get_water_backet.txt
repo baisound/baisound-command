@@ -1,0 +1,6 @@
+# TITLE: 水入りバケツ！
+# SUBTITLE: 水入りばけつ
+# CATEGORY: お助け系
+# GENRE: サバイバル|採掘
+# CONSOLE: baisound <player> get_water_backet 1 1 <sender>
+execute at @a run give @a water_bucket 1

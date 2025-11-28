@@ -1,0 +1,6 @@
+# TITLE: 採掘速度上昇20秒！
+# SUBTITLE: 採掘速度上昇20秒
+# CATEGORY: お助け系
+# GENRE: 整地|サバイバル|採掘
+# CONSOLE: baisound <player> give_haste 1 1 <sender>
+effect give @p minecraft:haste 20 3
