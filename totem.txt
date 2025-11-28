@@ -1,2 +1,7 @@
+# TITLE: 不死のトーテム
+# SUBTITLE: 不死のトーテムで1回死ぬのを回避
+# CATEGORY: お助け系
+# GENRE: 埋め立て|整地|サバイバル|採掘
+# CONSOLE: baisound <player> totem 1 1 <sender>
 give @p minecraft:totem_of_undying [minecraft:max_stack_size=255] 1
 item replace entity @s weapon.offhand with totem_of_undying[minecraft:max_stack_size=255] 1

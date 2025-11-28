@@ -1,3 +1,8 @@
+# TITLE: ネザーライト装備
+# SUBTITLE: ネザーライト装備を身にまといます
+# CATEGORY: お助け系
+# GENRE: 埋め立て|整地|サバイバル|採掘
+# CONSOLE: baisound <player> nezaraitosoubi 1 1 <sender>
 item replace entity @p armor.head with minecraft:netherite_helmet
 item replace entity @p armor.chest with minecraft:netherite_chestplate
 item replace entity @p armor.legs with minecraft:netherite_leggings

@@ -1,0 +1,6 @@
+# TITLE: 半分ブロック
+# SUBTITLE: 枠内を半分ブロックで埋める
+# CATEGORY: お助け系
+# GENRE: 埋め立て
+# CONSOLE: baisound <player> umetate_help_half 1 1 <sender>
+execute at @p run fill 6 49 6 -6 56 -6 minecraft:gold_block

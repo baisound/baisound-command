@@ -1,0 +1,6 @@
+# TITLE: 砂落ち50x50
+# SUBTITLE: 50x50の砂が落下します
+# CATEGORY: 妨害系
+# GENRE: 埋め立て|整地|サバイバル|採掘
+# CONSOLE: baisound <player> fall_sand 1 1 <sender>
+execute as @a run give @a minecraft:sand 64

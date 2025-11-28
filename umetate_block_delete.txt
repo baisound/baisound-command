@@ -1,0 +1,6 @@
+# TITLE: ブロック削除
+# SUBTITLE: 枠内のブロックを全削除
+# CATEGORY: 妨害系
+# GENRE: 埋め立て
+# CONSOLE: baisound <player> umetate_block_delete 1 1 <sender>
+execute at @p run fill 6 49 6 -6 63 -6 minecraft:air

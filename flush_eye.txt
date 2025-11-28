@@ -1,0 +1,13 @@
+# TITLE: めくらまし
+# SUBTITLE: めくらまし
+# CATEGORY: 妨害系
+# GENRE: 埋め立て|整地|サバイバル|積み上げ|採掘
+# CONSOLE: baisound <player> flush_eye 1 1 <sender>
+execute at @p run particle minecraft:explosion ~ ~1 ~ 0.5 0.5 0.5 0.1 100
+
+
+# 〇概要
+#  視界を遮る
+# 〇詳細
+#  プレイヤー画面を暗転させる
+

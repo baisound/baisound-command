@@ -3,4 +3,4 @@
 # CATEGORY: 妨害系
 # GENRE: 埋め立て|整地|サバイバル|積み上げ|採掘
 # CONSOLE: baisound <player> give_fatigue 1 1 <sender>
-effect give @p minecraft:mining_fatigue 10 3
+effect give {PlayerMe} minecraft:mining_fatigue 10 3

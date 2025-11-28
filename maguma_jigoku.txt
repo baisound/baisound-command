@@ -1,0 +1,6 @@
+# TITLE: マグマ地獄
+# SUBTITLE: 頭上にマグマ5x5
+# CATEGORY: 妨害系
+# GENRE: 埋め立て|整地|サバイバル|採掘
+# CONSOLE: baisound <player> maguma_jigoku 1 1 <sender>
+execute as @a at @s run fill ~-5 ~2 ~-5 ~5 ~10 ~5 minecraft:lava

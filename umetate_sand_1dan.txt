@@ -1,0 +1,6 @@
+# TITLE: 砂１段
+# SUBTITLE: 枠内砂で１段埋める
+# CATEGORY: 妨害系
+# GENRE: 埋め立て|整地
+# CONSOLE: baisound <player> umetate_sand_1dan 1 1 <sender>
+execute at @p run fill 6 90 6 -6 90 -6 minecraft:sand

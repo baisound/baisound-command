@@ -1,0 +1,186 @@
+# TITLE: お助け一段
+# SUBTITLE: 枠内にブロック１段落下
+# CATEGORY: お助け系
+# GENRE: 埋め立て
+# CONSOLE: baisound <player> umetate_help_1dan 1 1 <sender>
+execute at @p run summon falling_block 6 90 6 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 5 90 6 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 4 90 6 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 3 90 6 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 2 90 6 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 1 90 6 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 0 90 6 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -1 90 6 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -2 90 6 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -3 90 6 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -4 90 6 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -5 90 6 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -6 90 6 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+
+execute at @p run summon falling_block 6 90 5 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 5 90 5 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 4 90 5 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 3 90 5 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 2 90 5 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 1 90 5 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 0 90 5 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -1 90 5 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -2 90 5 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -3 90 5 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -4 90 5 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -5 90 5 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -6 90 5 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+
+execute at @p run summon falling_block 6 90 4 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 5 90 4 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 4 90 4 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 3 90 4 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 2 90 4 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 1 90 4 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 0 90 4 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -1 90 4 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -2 90 4 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -3 90 4 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -4 90 4 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -5 90 4 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -6 90 4 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+
+execute at @p run summon falling_block 6 90 3 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 5 90 3 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 4 90 3 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 3 90 3 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 2 90 3 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 1 90 3 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 0 90 3 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -1 90 3 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -2 90 3 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -3 90 3 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -4 90 3 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -5 90 3 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -6 90 3 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+
+execute at @p run summon falling_block 6 90 2 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 5 90 2 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 4 90 2 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 3 90 2 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 2 90 2 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 1 90 2 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 0 90 2 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -1 90 2 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -2 90 2 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -3 90 2 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -4 90 2 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -5 90 2 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -6 90 2 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+
+execute at @p run summon falling_block 6 90 1 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 5 90 1 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 4 90 1 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 3 90 1 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 2 90 1 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 1 90 1 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 0 90 1 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -1 90 1 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -2 90 1 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -3 90 1 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -4 90 1 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -5 90 1 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -6 90 1 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+
+execute at @p run summon falling_block 6 90 0 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 5 90 0 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 4 90 0 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 3 90 0 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 2 90 0 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 1 90 0 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 0 90 0 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -1 90 0 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -2 90 0 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -3 90 0 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -4 90 0 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -5 90 0 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -6 90 0 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+
+execute at @p run summon falling_block 6 90 -1 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 5 90 -1 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 4 90 -1 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 3 90 -1 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 2 90 -1 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 1 90 -1 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 0 90 -1 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -1 90 -1 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -2 90 -1 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -3 90 -1 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -4 90 -1 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -5 90 -1 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -6 90 -1 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+
+execute at @p run summon falling_block 6 90 -2 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 5 90 -2 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 4 90 -2 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 3 90 -2 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 2 90 -2 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 1 90 -2 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 0 90 -2 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -1 90 -2 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -2 90 -2 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -3 90 -2 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -4 90 -2 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -5 90 -2 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -6 90 -2 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+
+execute at @p run summon falling_block 6 90 -3 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 5 90 -3 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 4 90 -3 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 3 90 -3 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 2 90 -3 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 1 90 -3 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 0 90 -3 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -1 90 -3 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -2 90 -3 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -3 90 -3 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -4 90 -3 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -5 90 -3 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -6 90 -3 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+
+execute at @p run summon falling_block 6 90 -4 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 5 90 -4 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 4 90 -4 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 3 90 -4 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 2 90 -4 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 1 90 -4 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 0 90 -4 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -1 90 -4 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -2 90 -4 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -3 90 -4 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -4 90 -4 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -5 90 -4 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -6 90 -4 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+
+execute at @p run summon falling_block 6 90 -5 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 5 90 -5 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 4 90 -5 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 3 90 -5 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 2 90 -5 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 1 90 -5 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 0 90 -5 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -1 90 -5 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -2 90 -5 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -3 90 -5 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -4 90 -5 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -5 90 -5 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -6 90 -5 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+
+execute at @p run summon falling_block 6 90 -6 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 5 90 -6 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 4 90 -6 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 3 90 -6 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 2 90 -6 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 1 90 -6 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block 0 90 -6 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -1 90 -6 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -2 90 -6 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -3 90 -6 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -4 90 -6 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -5 90 -6 {BlockState:{Name:"minecraft:emerald_block"},Time:1}
+execute at @p run summon falling_block -6 90 -6 {BlockState:{Name:"minecraft:emerald_block"},Time:1}

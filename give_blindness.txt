@@ -1,0 +1,6 @@
+# TITLE: 暗闇地獄!
+# SUBTITLE: 15秒間暗闇
+# CATEGORY: 妨害系
+# GENRE: 埋め立て|整地|サバイバル|採掘
+# CONSOLE: baisound <player> give_blindness 1 1 <sender>
+effect give {PlayerMe} blindness 15 1

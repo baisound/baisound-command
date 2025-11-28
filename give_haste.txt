@@ -3,4 +3,4 @@
 # CATEGORY: お助け系
 # GENRE: 整地|サバイバル|採掘
 # CONSOLE: baisound <player> give_haste 1 1 <sender>
-effect give @p minecraft:haste 20 3
+effect give {playerMe} minecraft:haste 20 3
